@@ -1,6 +1,7 @@
 {
-  "name": "ui-catalog",
+  "name": "rhyztech-ui-catalog",
   "version": "0.1.0",
+  "description": "rhyztech ui catalog",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +9,16 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhythm191/ui-catalog.git"
+  },
+  "author": "rhythm191",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhythm191/ui-catalog/issues"
+  },
+  "homepage": "https://github.com/rhythm191/ui-catalog#readme",
   "dependencies": {
     "next": "12.1.4",
     "react": "18.0.0",
