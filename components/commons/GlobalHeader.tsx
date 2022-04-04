@@ -1,8 +1,9 @@
 import Link from "next/link";
-import styled from "@emotion/styled";
+/** @jsxImportSource @emotion/react */
+import { css, jsx } from "@emotion/react";
 import { FaTwitter, FaGithub } from "react-icons/fa";
 
-const Header = styled.header`
+const headerStyle = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,12 +12,12 @@ const Header = styled.header`
   border-bottom: 1px solid #969696;
 `;
 
-const GlobalTitle = styled.div`
+const globalTitleStyle = css`
   font-size: 32px;
   line-height: 1;
 `;
 
-const SocialLinks = styled.div`
+const socialLinkStyle = css`
   display: flex;
   justify-content: left;
   align-items: center;
@@ -24,13 +25,13 @@ const SocialLinks = styled.div`
 `;
 
 const GlobalHeader = () => (
-  <Header>
-    <GlobalTitle>
+  <header css={headerStyle}>
+    <div css={globalTitleStyle}>
       <Link href="/">
         <a>Rhyztech UI Catalog</a>
       </Link>
-    </GlobalTitle>
-    <SocialLinks>
+    </div>
+    <div css={socialLinkStyle}>
       <a
         href="https://twitter.com/rhythm191"
         rel="noopener noreferrer"
@@ -47,8 +48,8 @@ const GlobalHeader = () => (
       >
         <FaGithub />
       </a>
-    </SocialLinks>
-  </Header>
+    </div>
+  </header>
 );
 
 export default GlobalHeader;

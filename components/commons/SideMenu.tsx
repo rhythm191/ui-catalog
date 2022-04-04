@@ -1,7 +1,9 @@
 import Link from "next/link";
-import styled from "@emotion/styled";
 
-const Menu = styled.div`
+/** @jsxImportSource @emotion/react */
+import { css, jsx } from "@emotion/react";
+
+const menuStyle = css`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,11 +17,11 @@ const Menu = styled.div`
 `;
 
 const SideMenu = () => (
-  <Menu>
+  <div css={menuStyle}>
     <Link href="button">
       <a>button</a>
     </Link>
-  </Menu>
+  </div>
 );
 
 export default SideMenu;
