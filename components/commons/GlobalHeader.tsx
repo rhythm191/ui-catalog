@@ -2,27 +2,7 @@ import Link from "next/link";
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from "@emotion/react";
 import { FaTwitter, FaGithub } from "react-icons/fa";
-
-const headerStyle = css`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
-  padding: 24px;
-  border-bottom: 1px solid #969696;
-`;
-
-const globalTitleStyle = css`
-  font-size: 32px;
-  line-height: 1;
-`;
-
-const socialLinkStyle = css`
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 16px;
-`;
+import breakpoints from "../../styles/breakpoints";
 
 const GlobalHeader = () => (
   <header css={headerStyle}>
@@ -51,5 +31,42 @@ const GlobalHeader = () => (
     </div>
   </header>
 );
+
+const headerStyle = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #969696;
+
+  @media (min-width: ${breakpoints.sm}px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+`;
+
+const globalTitleStyle = css`
+  font-size: 20px;
+  line-height: 1;
+  margin: 16px 0 16px;
+
+  @media (min-width: ${breakpoints.sm}px) {
+    font-size: 24px;
+    margin: 0;
+  }
+`;
+
+const socialLinkStyle = css`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+`;
 
 export default GlobalHeader;
