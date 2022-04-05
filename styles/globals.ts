@@ -11,8 +11,13 @@ export const globalStyles = css`
   }
 
   a {
-    color: inherit;
+    color: #4e4e4e;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #b4b4b4;
+    }
   }
 
   * {
