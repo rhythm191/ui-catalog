@@ -46,6 +46,15 @@ const pageStyle = css`
     min-height: calc(100vh - 90px);
   }
 
+  @media (min-width: ${breakpoints.sm}px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
   h1 {
     margin: 24px 0 24px;
     font-size: 24px;
@@ -58,21 +67,12 @@ const pageStyle = css`
       text-align: left;
     }
   }
-`;
-
-const showcaseListStyle = css`
-  display: grid;
-  grid-template-columns: repeat(2, 170px);
-  gap: 16px;
-
-  @media (min-width: ${breakpoints.sm}px) {
-    grid-template-columns: repeat(3, 180px);
-    gap: 24px;
-  }
 
   @media (min-width: ${breakpoints.md}px) {
-    grid-template-columns: repeat(3, 240px);
-    gap: 24px;
+    h1 {
+      margin: 24px 0;
+      text-align: center;
+    }
   }
 `;
 

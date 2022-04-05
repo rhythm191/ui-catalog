@@ -26,6 +26,11 @@ const showcaseListStyle = css`
     grid-template-columns: repeat(3, 240px);
     gap: 24px;
   }
+
+  @media (min-width: ${breakpoints.lg}px) {
+    grid-template-columns: repeat(4, 240px);
+    gap: 24px;
+  }
 `;
 
 export default ShowcaseContainer;

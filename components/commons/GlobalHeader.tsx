@@ -33,11 +33,12 @@ const GlobalHeader = () => (
 );
 
 const headerStyle = css`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 90px;
+  height: 89px;
   width: 100%;
   padding: 0;
   border-bottom: 1px solid #969696;
