@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import ShowcaseContainer from "../components/commons/ShowcaseContainer";
 import Showcase from "../components/commons/Showcase";
 import breakpoints from "../styles/breakpoints";
 
@@ -17,7 +18,7 @@ const Button: NextPage = () => {
       <main>
         <h1>Button</h1>
 
-        <div css={showcaseListStyle}>
+        <ShowcaseContainer>
           <Showcase title="classic" path="components/button/classic.tsx">
             <button>button</button>
           </Showcase>
@@ -27,7 +28,7 @@ const Button: NextPage = () => {
           <Showcase title="classic" path="components/button/classic.tsx">
             <button>button</button>
           </Showcase>
-        </div>
+        </ShowcaseContainer>
       </main>
     </div>
   );
