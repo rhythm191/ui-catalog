@@ -7,6 +7,9 @@ import breakpoints from "../styles/breakpoints";
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from "@emotion/react";
 
+import ClassicButton from "../components/button/ClassicButton";
+import FlatButton from "../components/button/FlatButton";
+
 const Button: NextPage = () => {
   return (
     <div css={pageStyle}>
@@ -20,10 +23,10 @@ const Button: NextPage = () => {
 
         <ShowcaseContainer>
           <Showcase title="classic" path="components/button/classic.tsx">
-            <button>button</button>
+            <ClassicButton>button</ClassicButton>
           </Showcase>
-          <Showcase title="classic" path="components/button/classic.tsx">
-            <button>button</button>
+          <Showcase title="classic" path="components/button/FlatButton.tsx">
+            <FlatButton>FlatButton</FlatButton>
           </Showcase>
           <Showcase title="classic" path="components/button/classic.tsx">
             <button>button</button>
